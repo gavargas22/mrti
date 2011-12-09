@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+}
+#main-wrapper {
+	position: relative;
+	top: 0;
+	left: 50%;
+	width: 1024px;
+	margin-left: -512px;
+	height: auto;
+}
+
+/*CSS code for the header system*/
+/*The header will contain a randomly selected image of materials research; The header also contains the main navigation
+ * which is a classic system of dropdown system.
+ */
+
+#header {
+	position: relative;
+	top: 0;
+	left:0;
+	width: 1024px;
+	height: 340px;
+}
+#header-images {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 1024px;
+	height: 340px;
+	background-image: url(./image/backgrounds/01.jpg);
+	background-repeat: no-repeat;
+}
+
+/*End of the header CSS code
+ * 
+ */
+
+
+#body {
+	position: relative;
+	top: 0;
+	left:0;
+}
+#header {
+	position:relative;
+	top:0;
+	left:0;
+}
