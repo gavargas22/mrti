@@ -50,6 +50,13 @@ body {
 	background-image: url('./image/materials-title-white.png');
 	z-index: 1;
 }
+#lab-title-link a {
+	position:absolute;
+	height:38px;
+	width:510px;
+	text-indent:-99999px;
+	display:block;
+}
 /*End of the header CSS code
  * 
  */
@@ -264,4 +271,12 @@ body {
 	font-size:9px;
 	color:#333333;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#copyright-notice a {
+	text-decoration:none;
+	font-size:9px;
+	color:#333333;
+}
+#copyright-notice a:hover {
+	color:#ff6633;
 }
