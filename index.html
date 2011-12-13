@@ -3,15 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <title>Materials Research and Technology Institute | The University of Texas at El Paso</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
 </head>
 
-<body>
+<body>	
+	
+<!-- Facebook Code for the Like Page of Facebook. -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	
 	<div id="main-wrapper">
 		<div id="header">
+			<div id="mrti-logo"></div>
+			<div id="lab-title"></div>
 			<div id="header-images"></div>
 		</div>
-		<div id="body"></div>
-		<div id="footer"></div>
+		<div id="slideshow-news">
+			<div id="slides">
+				<div class="slides_container">
+					<div><img src="image/slides/slide-1.jpg" alt="Slide 1"></div>
+					<div><img src="image/slides/slide-2.jpg" alt="Slide 2"></div>
+					<div><img src="image/slides/slide-3.jpg" alt="Slide 3"></div>
+					<div><img src="image/slides/slide-4.jpg" alt="Slide 4"></div>
+				</div>
+			</div>
+			<div id="shadow-holder"></div>
+			<div id="storyboard">
+				<div id= "storyboard-title">Recent Stories</div>
+				<div id="storyboard-stories">
+					<div class="storyboard-story" id="storyboard-story-1">
+						<div class="story-title" id="story-title-1"><a href="#">Dr. Smith selected to top position at Applied Materials.</a></div>
+						<div class="story-date" id="story-date-1">June 6, 2067</div>
+					</div>
+					<div class="storyboard-story" id="storyboard-story-2">
+						<div class="story-title" id="story-title-2"><a href="#">Smith selected to top position at Applied Materials.</a></div>
+						<div class="story-date" id="story-date-2">June 6, 2067</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="body-page">
+			<div id="body-info-wrapper">
+				<div id="body-info-title">Welcome to the Future.</div>
+				<div id="body-info-content"><img src="image/dummy.png"></div>
+			</div>
+			<div id="facebook-like-wrapper"><div class="fb-like-box" data-href="https://www.facebook.com/pages/Materials-Research-and-Technology-Institute/199458250141759" data-width="230" data-height="350" data-show-faces="true" data-border-color="#eee" data-stream="true" data-header="false"></div></div>
+		</div>
+		<div id="footer">
+			<div id="footer-logo"></div>
+			<div id="footer-logo-utep"></div>
+			<div id="footer-menu"><a href="#">Home</a> | <a href="#">News</a> | <a href="#"> Research</a> | <a href="#">Projects</a> | <a href="#">Faculty</a></div>
+			<div id="copyright-notice">Copyright © 2011-2012 The University of Texas at El Paso. Designed and Developed by <a href="mailto@gavargas@slackentie.com">Guillermo Vargas</a> @ SlackenTie Group</div>
+		</div>
 	</div>
+	
 </body>
 </html>

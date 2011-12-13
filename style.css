@@ -23,27 +23,245 @@ body {
 	height: 340px;
 }
 #header-images {
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 1024px;
 	height: 340px;
 	background-image: url(./image/backgrounds/01.jpg);
 	background-repeat: no-repeat;
+	z-index: 0;
 }
-
+#mrti-logo {
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	width:74px;
+	height:67px;
+	background-image: url('./image/logo-white.png');
+	z-index: 1;
+}
+#lab-title {
+	position:absolute;
+	left:140px;
+	top:25px;
+	height:38px;
+	width:510px;
+	background-image: url('./image/materials-title-white.png');
+	z-index: 1;
+}
 /*End of the header CSS code
  * 
  */
 
+/*This is the header system that contains and the slideshow news.*/
+#slideshow-news {
+	position:relative;
+	top:-196px;
+	left:0;
+	width:1024px;
+	height:300px;
+}
+#slideshow-wrapper {
+	position: relative;
+	top: 1px;
+	left: 2px;
+	width: 729px;
+	height: 215px;
+}
+#slides {
+	position:relative;
+	overflow:hidden;
+	float:left;
+	top: 0;
+	left: 45px;
+	width: 730px;
+	height: 215px;
+}
+.slides_container {
+    width:730px;
+    height:215px;
+}
+.slides_container div {
+    width:730px;
+    height:215px;
+    display:block;
+}
+#shadow-holder {
+	position:absolute;
+	top:215px;
+	left:45px;
+	width: 730px;
+	height: 12px;
+	background-image: url('./image/slides/shadow.png');
+	z-index: 3;
+}
+#storyboard {
+	position:relative;
+	top:0;
+	left:58px;
+	width: 230px;
+	height: 305px;
+	background-color: #fff;
+	float:left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+#storyboard-title {
+	position:relative;
+	top:12px;
+	left:12px;
+	width:100px;
+	height:20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#ff6633;
+	font-size: 30px;
+	font-weight: bold;
+}
+#storyboard-stories {
+	position:absolute;
+	top:70px;
+	left:5px;
+	width: 220px;
+	height: 200px;
+}
+.storyboard-story {
+	position:relative;
+	height:auto;
+	padding-bottom:10px;
+	padding-top: 10px;
+	width:200px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#333;
+	border-bottom: 1px solid #D2D7C5;
+	left:10px;
+	top: 10px;
+}
+.story-title a {
+	position:relative;
+	font-weight:bold;
+	font-size: 14px;
+	color: #333;
+	text-decoration:none;
+	display:block;
+}
+.story-title a:hover {
+	color:#FF6633;
+}
+.story-title a:active {
+	color:#FF6633;
+}
+.story-date {
+	position: relative;
+	font-size:9px;
+	color:#FF6633;
+	top: 5px;
+}
+/*------------------------------------------------------------------------*/
 
-#body {
+/*The CSS code for the body aspect of the website which contains all the information that is necesary to show
+ * the website itself.
+ */
+#body-page {
+	position: relative;
+	top: -260px;
+	left:0;
+	width: 1024px;
+	height: auto;
+	min-height:320px;
+}
+#body-info-wrapper {
+	position: relative;
+	top:0;
+	left:0;
+	width:780px;
+	height:auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#body-info-title {
 	position: relative;
 	top: 0;
-	left:0;
+	left: 45px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #333333;
+	width: 710px;
+}
+#body-info-content {
+	position:relative;
+	top:10px;
+	left:45px;
+	color:#333333;
+	font-size:12px;
+	width: 710px;
+}
+#facebook-like-wrapper {
+	position:absolute;
+	top: 90px;
+	left: 788px;
+	height:350px;
+	width: 230px;
+	background-color:#D2D7C5;
 }
 #header {
 	position:relative;
 	top:0;
 	left:0;
+}
+/*This is the CSS code for the styling of the Footer aspect of the website.*/
+#footer {
+	position:relative;
+	width: 1024px;
+	height: 80px;
+	top:0;
+	left:0;
+}
+#footer-logo {
+	position:absolute;
+	top:0;
+	left:0;
+	width:53px;
+	height: 48px;
+	background-image: url('image/logo-footer.png');
+}
+#footer-logo-utep {
+	position:absolute;
+	top:0;
+	left:0;
+	width:68px;
+	height: 53px;
+	background-image: url('image/utep-footer.png');
+}
+#footer-menu {
+	position: absolute;
+	top: 0;
+	left:72px;
+	width: 400px;
+	height:10px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+}
+#footer-menu a {
+	font-size:10px;
+	font-weight: bold;
+	text-decoration:none;
+	color:#333333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#footer-menu a:hover {
+	color:#FF6633;
+}
+#copyright-notice {
+	position:absolute;
+	top:14px;
+	left:71px;
+	width:600px;
+	height:11px;
+	font-size:9px;
+	color:#333333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
