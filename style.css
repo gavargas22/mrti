@@ -32,6 +32,37 @@ body {
 	background-repeat: no-repeat;
 	z-index: 0;
 }
+/*Menu CSS*/
+#menu-wrapper {
+	position:absolute;
+	top: 75px;
+	left: 40px;
+	width: 800px;
+	height: 35px;
+	margin: 0;
+}
+#menu-wrapper ul {
+	margin: 0;
+	list-style: none;
+}
+#menu-wrapper ul a {
+	margin: 0;
+}
+#menu-wrapper ul li {
+	margin-left: -60px;
+}
+#menu-wrapper ul li a {
+	float:left;
+	color: #FF6633;
+	width: auto;
+	height: 35px;
+	padding: 5px 20px 5px 20px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 24px;
+}
+/* ------- */
 #mrti-logo {
 	position: absolute;
 	top: 10px;
@@ -40,6 +71,12 @@ body {
 	height:67px;
 	background-image: url('./image/logo-white.png');
 	z-index: 1;
+}
+#mrti-logo a {
+	display: block;
+	width: 74px;
+	height: 67px;
+	text-indent: -999px
 }
 #lab-title {
 	position:absolute;
@@ -117,6 +154,7 @@ body {
 	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+	z-index: 10;
 }
 #storyboard-title {
 	position:relative;
@@ -212,7 +250,6 @@ body {
 	left: 788px;
 	height:350px;
 	width: 230px;
-	background-color:#D2D7C5;
 }
 #header {
 	position:relative;
@@ -237,11 +274,18 @@ body {
 }
 #footer-logo-utep {
 	position:absolute;
-	top:0;
-	left:0;
+	top: 12px;
+	left: 867px;
 	width:68px;
 	height: 53px;
 	background-image: url('image/utep-footer.png');
+	z-index: 2;
+}
+#footer-logo-utep a {
+	display: block;
+	width: 68px;
+	height: 53px;
+	text-indent: -9999px;
 }
 #footer-menu {
 	position: absolute;
