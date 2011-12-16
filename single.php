@@ -22,30 +22,13 @@
 				</div>
 			</div>
 			<div id="shadow-holder"></div>
-			<div id="storyboard">
-				<div id= "storyboard-title">Recent Stories</div>
-				<div id="storyboard-stories">
-					<?php query_posts( 'cat=3' ); ?>
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="storyboard-story" id="storyboard-story-<?php the_ID(); ?>">
-						<div class="story-title" id="story-title-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
-						<div class="story-date" id="story-date-<?php the_ID(); ?>"><?php the_time('F jS, Y') ?></div>
-					</div>
-					<?php endwhile; else: ?>
-					<p>Sorry, no posts matched your criteria.</p>
-					<?php endif; ?>
-				</div>
-			</div>
 		</div>
 		<div id="body-page">
 			<div id="body-info-wrapper">
-				<?php query_posts( 'cat=4' ); ?>
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 				<div id="body-info-title"><?php the_title(); ?></div>
-				<div id="body-info-content"><?php the_content(); ?></div>
-				<?php endwhile; else: ?>
-				<p>Sorry, no posts matched your criteria.</p>
-				<?php endif; ?>
+				<div id="body-info-content"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
+				<?php endwhile; // end of the loop. ?>
 			</div>
 			<div id="facebook-like-wrapper"><div class="fb-like-box" data-href="https://www.facebook.com/pages/Materials-Research-and-Technology-Institute/199458250141759" data-width="230" data-height="350" data-show-faces="true" data-border-color="#eee" data-stream="true" data-header="false"></div></div>
 		</div>

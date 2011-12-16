@@ -1,3 +1,16 @@
+/*
+Theme Name: MRTI Institute
+Theme URI: http://mrti.utep.edu/
+Description: This is the theme for the Materials Research and Technology Institute Theme for its WordPress website..
+Author: Guillermo Vargas
+Author URI: http://www.slackentie.com/
+Version: 1.0
+Tags: mrti, utep
+
+License: Creative Commons License Share Alike
+License URI:
+*/
+
 body {
 	margin: 0;
 }
@@ -35,12 +48,14 @@ body {
 /*Menu CSS*/
 #menu-wrapper {
 	position:absolute;
-	top: 75px;
+	top: 85px;
 	left: 40px;
 	width: 800px;
 	height: 35px;
 	margin: 0;
+	z-index: 10;
 }
+/*
 #menu-wrapper ul {
 	margin: 0;
 	list-style: none;
@@ -53,15 +68,136 @@ body {
 }
 #menu-wrapper ul li a {
 	float:left;
-	color: #FF6633;
+	color: #f4793e;
 	width: auto;
 	height: 35px;
 	padding: 5px 20px 5px 20px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight:500;
 	font-size: 24px;
 }
+#menu-wrapper ul li a:hover {
+	background-color:#FFFFFF;
+}
+
+#menu-wrapper ul li ul {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 34px;
+	left: 0;
+}
+#menu-wrapper ul li ul li {
+	margin-left: -40px;
+	width: auto;
+	height: 35px;
+	background-color: #ffffff;
+	padding-left: 15px;
+	padding-right: 15px;
+	line-height: 35px;
+}
+
+*/
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	/*background: #EEEEEE; /*Show a solid color for older browsers*/
+	/*background: -moz-linear-gradient(#EEEEEE, #EEEEEE);
+	background: -o-linear-gradient(#EEEEEE, #EEEEEE);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#EEEEEE)); /* older webkit syntax */
+	/*background: -webkit-linear-gradient(#EEEEEE, #EEEEEE);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;*/
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto 6px;
+	width: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*z-index: 10;*/
+}
+#access ul {
+	font-size: 13px;
+	list-style: none;
+	margin: 0 0 0 -0.8125em;
+	padding-left: 0;
+}
+#access li {
+	float: left;
+	position: relative;
+}
+#access a {
+	color: #FFFFFF;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
+}
+#access ul ul {
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 43px;
+	left: 0;
+	width: 188px;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	background: #f9f9f9;
+	border-bottom: 1px dotted #ddd;
+	color: #444;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1.4em;
+	padding: 10px 10px;
+	width: 168px;
+}
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+	background: #efefef;
+}
+#access li:hover > a,
+#access a:focus {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	color: #373737;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
 /* ------- */
 #mrti-logo {
 	position: absolute;
@@ -81,7 +217,7 @@ body {
 #lab-title {
 	position:absolute;
 	left:140px;
-	top:25px;
+	top:40px;
 	height:38px;
 	width:510px;
 	background-image: url('./image/materials-title-white.png');
@@ -163,7 +299,7 @@ body {
 	width:100px;
 	height:20px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color:#ff6633;
+	color:#f4793e;
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -189,21 +325,21 @@ body {
 .story-title a {
 	position:relative;
 	font-weight:bold;
-	font-size: 14px;
+	font-size: 12px;
 	color: #333;
 	text-decoration:none;
 	display:block;
 }
 .story-title a:hover {
-	color:#FF6633;
+	color:#f4793e;
 }
 .story-title a:active {
-	color:#FF6633;
+	color:#f4793e;
 }
 .story-date {
 	position: relative;
 	font-size:9px;
-	color:#FF6633;
+	color:#f4793e;
 	top: 5px;
 }
 /*------------------------------------------------------------------------*/
@@ -304,7 +440,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #footer-menu a:hover {
-	color:#FF6633;
+	color:#f4793e;
 }
 #copyright-notice {
 	position:absolute;
@@ -322,5 +458,5 @@ body {
 	color:#333333;
 }
 #copyright-notice a:hover {
-	color:#ff6633;
+	color:#f4793e;
 }
