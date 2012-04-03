@@ -355,6 +355,12 @@ body {
 	height: auto;
 	min-height:320px;
 }
+#body-page a {
+	color: #00A3E4;
+}
+#body-page a:hover {
+	color:#333;
+}
 #body-info-wrapper {
 	position: relative;
 	top:0;
