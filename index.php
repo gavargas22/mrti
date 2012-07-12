@@ -25,7 +25,7 @@
 			<div id="storyboard">
 				<div id= "storyboard-title">Recent Stories</div>
 				<div id="storyboard-stories">
-					<?php query_posts( 'cat=3' ); ?>
+					<?php query_posts( 'cat=4' ); ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="storyboard-story" id="storyboard-story-<?php the_ID(); ?>">
 						<div class="story-title" id="story-title-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
@@ -39,7 +39,7 @@
 		</div>
 		<div id="body-page">
 			<div id="body-info-wrapper">
-				<?php query_posts( 'cat=4' ); ?>
+				<?php query_posts( 'cat=3' ); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div id="body-info-title"><?php the_title(); ?></div>
 				<div id="body-info-content"><?php the_content(); ?></div>
