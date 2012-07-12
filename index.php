@@ -1,3 +1,5 @@
+<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+
 <?php get_header(); ?>
 	
 	<div id="main-wrapper">
@@ -5,7 +7,7 @@
 			<div id="mrti-logo"><a href="http://mrti.utep.edu">MRTI Home</a></div>
 			<div id="footer-logo-utep"><a href="http://www.utep.edu">UTEP Home</a></div>
 			<div id="lab-title"></div>
-			<div id="header-images"></div>
+			<div id="header-images" style="background-image:url(<?php header_image(); ?>); background-repeat:no-repeat;"></div>
 			<div id="menu-wrapper">
 				<nav id="access" role="navigation">
 				<?php wp_nav_menu(); ?>
