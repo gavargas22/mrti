@@ -32,11 +32,4 @@
 			</div>
 			<div id="facebook-like-wrapper"><div class="fb-like-box" data-href="https://www.facebook.com/pages/Materials-Research-and-Technology-Institute/199458250141759" data-width="230" data-height="350" data-show-faces="true" data-border-color="#eee" data-stream="true" data-header="false"></div></div>
 		</div>
-		<div id="footer">
-			<div id="footer-logo"></div>
-			<div id="footer-menu"><a href="#">Home</a> | <a href="#">News</a> | <a href="#"> Research</a> | <a href="#">Projects</a> | <a href="#">Faculty</a></div>
-			<div id="copyright-notice">Copyright © 2011-2012 The University of Texas at El Paso. Designed and Developed by <a href="mailto:gavargas@slackentie.com">Guillermo Vargas</a> @ SlackenTie Group</div>
-		</div>
-	</div>
-	
 <?php get_footer(); ?>
