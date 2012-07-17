@@ -29,6 +29,7 @@ get_header(); ?>
 		</div>
 		<div id="body-page">
 			<div id="body-info-wrapper">
+				<div class="editor-link"><?php edit_post_link('Edit', '<p>', '</p>'); ?></div>
 				<?php while ( have_posts() ) : the_post(); ?>
 				<div id="body-info-title"><?php the_title(); ?></div>
 				<div id="body-info-content"><?php the_content('Read the rest of this entry &raquo;'); ?></div>
@@ -36,11 +37,4 @@ get_header(); ?>
 			</div>
 			<div id="facebook-like-wrapper"><div class="fb-like-box" data-href="https://www.facebook.com/pages/Materials-Research-and-Technology-Institute/199458250141759" data-width="230" data-height="350" data-show-faces="true" data-border-color="#eee" data-stream="true" data-header="false"></div></div>
 		</div>
-		<div id="footer">
-			<div id="footer-logo"></div>
-			<div id="footer-menu"><a href="#">Home</a> | <a href="#">News</a> | <a href="#"> Research</a> | <a href="#">Projects</a> | <a href="#">Faculty</a></div>
-			<div id="copyright-notice">Copyright © 2011-2012 The University of Texas at El Paso. Designed and Developed by <a href="mailto:gavargas@slackentie.com">Guillermo Vargas</a> @ SlackenTie Group</div>
-		</div>
-	</div>
-
 <?php get_footer(); ?>

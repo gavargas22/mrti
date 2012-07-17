@@ -22,7 +22,27 @@ body {
 	margin-left: -512px;
 	height: auto;
 }
-
+.editor-link {
+	position:relative;
+	top:0;
+	left:0;
+	font-family:"Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-weight:bold;
+	color:#333;
+}
+.editor-link a {
+	color: #333;
+	font-size: 14px;
+	width: auto;
+	height: 15px;
+	background-color: #F4793E;
+	padding: 5px;
+	line-height: 15px;
+}
+.editor-link a:hover {
+	color: #fff;
+	background-color: #000;
+}
 /*CSS code for the header system*/
 /*The header will contain a randomly selected image of materials research; The header also contains the main navigation
  * which is a classic system of dropdown system.

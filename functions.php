@@ -9,6 +9,7 @@ $args = array(
 );
 
 add_theme_support( 'custom-header', $args );
+add_theme_support( 'post-thumbnails' );
 if ( function_exists( 'register_nav_menu' ) ) {
 	register_nav_menu( 'top_navigation', 'Main navigation' );
 }
